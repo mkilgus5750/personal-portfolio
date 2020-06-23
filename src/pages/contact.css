@@ -1,0 +1,44 @@
+ #name, #email, #message {
+    border-radius: 10px;
+    height: 30px;
+    border: 1px solid rgb(138, 138, 138);
+    width: 100%;
+    margin-bottom: 10px;
+}
+#name:focus, #email:focus, #message:focus {
+    border-color: lightblue;
+    outline: none;
+    box-shadow: 0 5px 10px rgba(226, 226, 226, 0.19), 0 3px 3px rgba(139, 139, 139, 0.23);
+}
+
+#message {
+    height: 80px;
+}
+
+
+.send{
+    color: white;
+    background-color: rgb(41, 14, 92);
+    border: 3px solid white;
+    font-weight: bold;
+    padding: 1rem;
+} 
+
+
+.Contact {
+    width: 100%;
+    margin: 0 auto;
+    background-image: linear-gradient(to right, rgb(178, 111, 233),  rgb(143, 205, 241), rgb(255, 255, 255));
+    background-repeat: no-repeat; 
+    background-size: cover;
+    height: 100%;
+    max-width: 1440px;
+   
+}
+
+form {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    background-color: rgb(255, 255, 255);
+    padding: 5%;
+    margin: 100px;
+}

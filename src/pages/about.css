@@ -1,0 +1,35 @@
+.About {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.About-container {
+    color: rgba(255, 255, 255, 0.877);
+    background-image: linear-gradient(to right, rgb(178, 111, 233),  rgb(143, 205, 241), rgb(255, 255, 255));
+    background-repeat: no-repeat; 
+    background-size: cover;
+    height: 100%;
+    max-width: 1440px;
+    padding: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 100vh;
+}
+
+.About-content h1 {  
+    font-size: 4rem;
+    margin: 2rem auto;
+}
+
+.About-content {
+    grid-column: span 2;
+}
+
+.About-content p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+.illustration2{
+    grid-column: span 2;
+}

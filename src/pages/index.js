@@ -1,22 +1,27 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import Layout from "../components/layout/layout"
+import './index.css'
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import Illustration from "../components/illustration/illustration"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-  </Layout>
-)
+export default function Index(){
+  
 
-export default IndexPage
+  return(
+    <Layout className="Index">
+      <div className="Index-container">
+        <div className="Index-words">
+          <p className="Hi">Hi there! I am</p>
+          <h1>Mari Kilgus</h1>
+          <p className="Index-bio">CS Student, flute player, and aspiring front-end developer</p>
+          <div className="Index-buttons">
+            <a href='/contact'><button className="Connect-button">Let's connect!</button></a>
+            <a href='/portfolio'><button className="Portfolio-button">See portfolo</button></a>
+          </div>
+        </div>
+        <Illustration className="maxwidth"/>
+
+      </div>
+    </Layout>
+  )
+}
